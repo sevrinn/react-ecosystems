@@ -4,7 +4,7 @@ import NewTodoForm from './NewTodoForm'
 import './TodoList.css'
 
 //TodoList takes todos as a prop and maps out each todo
-const TodoList = ({ todos = [] }) => (
+const TodoList = ({ todos = [{ text: 'hello' }] }) => (
 	<div className='list-wrapper'>
 		<NewTodoForm />
 		{todos.map((todo) => (
